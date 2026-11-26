@@ -1,0 +1,24 @@
+From: "Payroll Team" <security@payroll-example.invalid>
+To: analyst@example.test
+Reply-To: external-support@example.invalid
+Subject: Urgent: Verify your payroll account
+Date: Tue, 10 Mar 2026 09:00:00 +0000
+MIME-Version: 1.0
+Authentication-Results: mx.example.test; spf=fail; dkim=none; dmarc=fail
+Content-Type: multipart/mixed; boundary="sample-boundary"
+
+--sample-boundary
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello,
+Please verify your account using this link:
+http://payroll-example.invalid/verify
+
+--sample-boundary
+Content-Type: text/html; name="payroll_update.html"
+Content-Disposition: attachment; filename="payroll_update.html"
+Content-Transfer-Encoding: base64
+
+VGhpcyBpcyBhIGZha2Ugc2FtcGxlIGF0dGFjaG1lbnQu
+--sample-boundary--
